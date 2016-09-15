@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Escape the Page!</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!--Jq UI--<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script-->
+    <script src="./JqUi/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="Stylesheet.css">
+    <link rel="stylesheet" href="Stylesheet2.css">
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <script src="Room2script.js"></script>
+
+
+</head>
+<body>
+    <!-- Header -->
+    <ul id = "header" class="nav nav-pills">
+        <li role="presentation"> <img alt="Brand" src="./img/Picture1.png" height="45" width="45"></li>
+        <li role="presentation" ><a href="./HomePage.html">Game Start Page</a></li>
+        <li role="presentation" ><a href="./Room1.html">Room1</a></li>
+        <li role="presentation" class="active"><a href="./Room2.html">Room2</a></li>
+        <li role="presentation" class="locked disabled"><a href="./Room3.html">Room3</a></li>
+    </ul>
+    <!-- End Header -->
+
+    <div id="container">
+        <div id= panel1 class="panel panel-default">
+            <div  class="panel-footer">
+                <img src="img/lock.png" id="lock" width="20em">
+                <p id="hint1"> The Dark side clouds everything. Impossible to see, the key is</p>
+                <input id="reveal" type="text" class="form-control" placeholder="Star Wars: (month) the (day) be with you" aria-describedby="basic-addon1">
+
+            </div>
+        </div>
+
+        <div id= panel2 class="panel panel-default">
+            <div  id="basic-addon1">Complete this Famous Star Wars quote:</div>
+            <div  class="panel-footer">
+                <input id=text1 type="text" class="form-control inline" placeholder="enter here" aria-describedby="basic-addon1">  <div class="inline">, I am your father</div>
+            </div>
+            <div id="hint2" class="panel-footer"> close, but <em>no</em></div>
+            <div id="hint3" class="panel-footer"> <em>no</em>, that's not it</div>
+        </div>
+
+        <!-- Leah, Han, Luke, Padme, Vader-->
+        <ul class= "panel-footer hidden" id="sortable">
+            <li id="Padme" class="ui-state-default">Padme</li>
+            <li id="Vader" class="ui-state-default">Vader</li>
+            <li id="Leia" class="ui-state-default">Leia</li>
+            <li id="Han" class="ui-state-default">Han</li>
+            <li id="Luke" class="ui-state-default">Luke</li>
+        </ul>
+
+
+        <div id= panel3 class="panel panel-default">
+            <div>What popular Science Fiction movie debuted in 1979?</div>
+            <div  class="panel-footer">
+                <input id=text2 type="text" class="form-control inline" placeholder="enter here" aria-describedby="basic-addon1">
+            </div>
+            <div id="hint4" class="panel-footer"> you'd think that'd be the answer, right?</div>
+            <div id="hint5" class="panel-footer"> nope</div>
+        </div>
+
+    </div>
+
+    <div  class="left panel-footer">
+        <p class="panel-footer">At an awkward family dinner, there are five members, Padme, Vader, Leia, Han, and Luke,
+            who <span id="magic">are not sure where to </span><a class="hidden" id="switch">   PressHere </a> sit at the dinner table.
+            So as not to be too awkward, the following rules must be obeyed</p>
+            <ul class="panel-footer">
+                <li>Padme is not sit next to Leia</li>
+                <li>Vader is not next to Han or Leia </li>
+                <li>Neither Leia or Vader are next to Luke</li>
+                <li>And Han should sit on Luke's right</li>
+            </ul>
+            <p class="panel-footer">can you correctly seat them from right(top) to left(bottom)?</p>
+        
+        <div id="dialog" title="Great Job!">
+            <p>  Completing the riddle caused a slight change,<br> can you find it?</p>
+        </div>
+    </div>
+
+    <div id="accordion" class="hidden">
+        <h3>Section 1</h3>
+            <div><p>Find the Hidden Link!</p></div>
+        <h3>Section 2</h3>
+            <div><p> Super Cold</p></div>
+        <h3>Section 3</h3>
+            <div><p>Nope</p></div>
+        <h3>Section 5</h3>
+            <div><p>Not here</p></div>
+        <h3>Section 6</h3>
+            <div><p>Not here</p></div>
+        <h3>Section 7</h3>
+            <div><p>Still Very Cold</p></div>
+        <h3>Section 8</h3>
+             <div><p>Not here</p></div>
+        <h3>Section 9</h3>
+            <div><p>cold</p></div>
+        <h3>Section 10</h3>
+            <div><p>Not here</p></div>
+        <h3>Section 11</h3>
+            <div><p>warm</p></div>
+        <h3>Section 12</h3>
+            <div><p>Not here</p></div>
+        <h3>Section 13</h3>
+             <div><p>warm</p></div>
+        <h3>Section 14</h3>
+            <div><p>Not here</p></div>
+        <h3>Section 15</h3>
+            <div><p>Very warm</p></div>
+        <h3>Section 16</h3>
+            <div><p>hot</p></div>
+        <h3>Section 17</h3>
+            <div>
+                <p style="color: #555555">Not here?</p>
+                <a id="here">Actually, it is here! </a>
+            </div>
+        <h3>Section 18</h3>
+            <div><p>hot</p></div>
+        <h3>Section 19</h3>
+            <div><p>very warm</p></div>
+        <h3>Section 20</h3>
+            <div><p>Not here</p></div>
+        <h3>Section 21</h3>
+            <div><p>warm</p></div>
+        <h3>Section 22</h3>
+            <div><p>Not here</p></div>
+        <h3>Section 23</h3>
+            <div><p>Not here</p></div>
+        <h3>Section 24</h3>
+            <div><p>Not here</p></div>
+        <h3>Section 25</h3>
+            <div><p>Warm</p></div>
+        <h3>Section 26</h3>
+            <div><p>Not here</p></div>
+        <h3>Section 27</h3>
+            <div><p>Still Cold</p></div>
+        <h3>Section 28</h3>
+            <div><p>Not here</p></div>
+        <h3>Section 29</h3>
+            <div><p>Not here</p></div>
+        <h3>Section 30</h3>
+            <div><p>Not here</p></div>
+        <h3>Section 31</h3>
+            <div><p>Super cold</p></div>
+        <h3>Section 32</h3>
+            <div><p>Not here</p></div>
+        <h3>Section 33</h3>
+            <div><p>Super Cold</p></div>
+        <h3>Section 34</h3>
+            <div><p>Not here</p></div>
+        <h3>Section 35</h3>
+            <div><p>Not here</p></div>
+        <h3>Section 36</h3>
+            <div><p>Extremely cold</p></div>
+        </div>
+
+
+
+    <img id="key" src="./img/key.png">
+
+    <!-- Footer -->
+    <div class="push"></div>
+    <div id= "footer">
+        <<ul id="foot">
+        <li><a>Terms</a></li>
+        <li><a>Conditions</a></li>
+        <li><a href ="./Info.html">Information</a></li>
+        <li><a>Services</a></li>
+        <li><a>Privacy</a></li>
+        <li><a>Jobs</a></li>
+    </ul>
+    </div>
+    <!-- End Footer -->
+
+</body>
+</html>

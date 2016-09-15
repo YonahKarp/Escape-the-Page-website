@@ -1,0 +1,53 @@
+#header{
+    background-color: black;
+}
+
+.push{ /* used so footer doesn't overlap*/
+    height: 5em;
+    clear: both;
+}
+
+
+.highlight{
+    background-color: rgba(50,50,50,0.5);
+}
+
+.hidden{
+    display: none;
+}
+
+.panel, .panel-footer{
+    background:rgba(255,255,255,0.5); /* w/ alpha*/
+}
+
+body{
+    background: teal; /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(circle,turquoise 5%,teal 20%, black 40%) no-repeat center center fixed;
+    background: -o-radial-gradient(circle,turquoise 5%,teal 20%, black 40%);
+    background: -moz-radial-gradient(circle,turquoise 5%,teal 20%, black 40%) no-repeat  center center fixed;
+    background: radial-gradient(circle,turquoise 5%,teal 20%, black 40%)
+    background-size: cover;
+}
+
+a{
+    color: #20948a;
+}
+a:hover{
+    color: turquoise;
+}
+
+#footer{
+    clear: both;
+    background-color: black;
+    height: 5em;
+    width: 100%;
+    position: fixed ;
+    bottom: 0;
+}
+
+#foot li{
+     display: inline;
+     margin-left: 10%;
+ }
+
+

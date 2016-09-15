@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Escape the Page!</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!--Jq UI--<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script-->
+    <script src="JqUi/jquery-ui.js"></script>
+    <!--Google Maps-->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <link rel="stylesheet" href="Stylesheet.css">
+    <link rel="stylesheet" href="Stylesheet3.css">
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <script src="Room3script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <ul id = "header" class="nav nav-pills">
+        <li role="presentation"> <img alt="Brand" src="./img/Picture1.png" height="45" width="45"></li>
+        <li role="presentation" ><a href="./HomePage.html">Game Start Page</a></li>
+        <li role="presentation" ><a href="./Room1.html">Room1</a></li>
+        <li role="presentation" ><a href="./Room2.html">Room2</a></li>
+        <li role="presentation" class="active"><a href="./Room3.html">Room3</a></li>
+        <li role="presentation" class="dropdown hidden ">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                Dropdown <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li> The key to success</li>
+                <li> <img id="key" src="./img/key.png"></li>
+            </ul>
+        </li>
+    </ul>
+    <!-- End Header -->
+    <div id= panel1 class="panel panel-footer">
+        <div class="panel-footer">
+            <h5> Input some <em>info</em> we can validate</h5>
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">Name</span>
+                <input id="name" type="text" class="form-control" placeholder="Whose name? well, that's the question." aria-describedby="basic-addon1">
+                <span class="hidden" style='color: red'>only letters, please</span>
+                <span class="hidden" style='color: red'>Correct format, but not correct <em style="color: mediumvioletred">information</em></span>
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon2">Email</span>
+                <input id="email" type="text" class="form-control" placeholder="make it one we're familiar with" aria-describedby="basic-addon2">
+                <span class="hidden" style='color: red'>We need a valid Email</span>
+                <span class="hidden" style='color: red'>Correct format, but not correct <em style="color: mediumvioletred">information</em></span>
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon3">Phone</span>
+                <input id="phone" type="text" class="form-control" placeholder= "We don't want your phone number..." aria-describedby="basic-addon2">
+                <span class="hidden" style='color: red'>Numbers only</span>
+                <span class="hidden" style='color: red'>Correct format, but not correct <em style="color: mediumvioletred">information</em></span>
+            </div>
+            <button id="submit" type="button" class="btn btn-primary">submit </button>
+        </div>
+    </div>
+
+
+    <div id= mapPanel class="hidden panel panel-footer">
+        <p class="panel" style="width: 20em">P. Sherman, 42, Wallaby Way...</p>
+        <div id ="map"> P. Sherman, 42, Wallaby Way...</div>
+    </div>
+
+    <div id="panel3" class="panel-footer hidden">
+        <input id="pass" type="text" class="form-control" placeholder= "Input Password" aria-describedby="addon4">
+        <p class="hidden showNext"> The password?...it's four words all uppercase </p>
+        <p class="hidden">but the catch is, it's one word all lowercase</p>
+        <p class="hidden">again, it's all lowercase, one word; four words all uppercase</p>
+        <p class="hidden">if you're using Capslock, you're doing it wrong</p>
+        <p class="hidden">Don't use the space bar either</p>
+        <p class="hidden">Final hint: f*******************e</p>
+
+    </div>
+
+    <div id="drop1" class="droppable"></div>
+    <div id="drop2" class="droppable"></div>
+    <div id="drop3" class="droppable"></div>
+    <div id="drop4" class="droppable"></div>
+    <div id="drop5" class="droppable"></div>
+    <div id="drop6" class="droppable"></div>
+
+    <img id="Piece1" class="draggable  " src="./img/maze/Piece1.png" alt="null">
+    <img id="Piece2" class="draggable  " src="./img/maze/Piece2.png" alt="null">
+    <img id="Piece3" class="draggable  hidden" src="./img/maze/Piece3.png" alt="null">
+    <img id="Piece4" class="draggable  hidden" src="./img/maze/Piece4.png" alt="null">
+    <img id="Piece5" class="draggable  hidden" src="./img/maze/Piece5.png" alt="null">
+    <img id="Piece6" class="draggable  hidden" src="./img/maze/Piece6.png" alt="null">
+
+    <img id="logo" class="hidden" src="./img/maze/MazeEnd.png" alt="null">
+
+
+    <!-- Footer -->
+    <div class="push"></div>
+    <div id= "footer">
+        <ul id="foot">
+            <li><a>Terms</a></li>
+            <li><a>Conditions</a></li>
+            <li><a href ="./Info.html">Information</a></li>
+            <li><a>Services</a></li>
+            <li><a>Privacy</a></li>
+            <li><a>Jobs</a></li>
+        </ul>
+    </div>
+    <!-- End Footer -->
+
+</body>
+</html>

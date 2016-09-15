@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Escape the Page!</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!--Jq UI-->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <!-- plugin-->
+    <script src='spectrum.js'></script>
+    <link rel='stylesheet' href='spectrum.css'>
+
+    <link rel="stylesheet" href="Stylesheet.css">
+    <link rel="stylesheet" href="Stylesheet1.css">
+    <script src="Room1script.js"></script>
+
+
+</head>
+<body>
+    <!-- Header -->
+    <ul id = "header" class="nav nav-pills">
+        <li id="logo" role="presentation"> <a data-toggle="collapse" href="#collapse1"><img alt="Brand" src="./img/Picture1.png" height="45" width="45"></a></li>
+        <li role="presentation" ><a href="./HomePage.html">Game Start Page</a></li>
+        <li role="presentation" class="active"><a href="./Room1.html">Room1</a></li>
+        <li role="presentation" class="locked disabled"><a href="./Room2.html">Room2</a></li>
+        <li role="presentation" class="locked disabled"><a href="./Room3.html">Room3</a></li>
+    </ul>
+    <!-- End Header -->
+    <div class=" conatiner">
+        <div id= panel1 class="panel panel-default">
+            <div  class="panel-body">
+               <p id="accordian"> 1. Doesn't the background look Familiar?    ▼</p>
+            </div>
+            <div id="collapse1" class="panel-collapse panel-footer collapse">
+                <p> have you re<span style="color: red">a</span>d the time?</p>
+                <img id = "clock" src="./img/clock.png">
+                <p> 2. an unlucky prime </p>
+
+            </div>
+            <p id = hint>hmmm, seems like it's locked. Perhaps clicking the object that's suggested by the above hint will open it</p>
+        </div>
+        <div>
+            <div  id="input1" class="input-group">
+                <span class="input-group-addon" id="basic-addon1">2</span>
+                <input id=text1 type="text" class="form-control" placeholder="input any number, then press enter" aria-describedby="basic-addon1">
+                <div id="collapse2" class="panel-footer">
+                    <p>"The above number is an <span style="color: darkolivegreen">environmentally friendly</span> zero-emission number"</p>
+                    <button id="begin" type="button" class="btn btn-primary">begin </button>
+                </div>
+                <div id="hint2" class="panel-footer">
+                    <p> Whoops! wrong answer. Try again</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="left">
+        <div id="colorPicker">
+           <p class="input-group-addon" style="width: 20px">3.   <input type='text' id="rgb"></p>
+        </div>
+    </div>
+
+
+    <div class= "panel-footer" id = "hint3">
+        <h5>rgb stands for red, green, blue </h5>
+        <p>Values can be changed through the interface
+            or manually by typing in the text box below it</p>
+        <p>Format is important though, so leave parenthesis and commas.
+            It should look like this: </p>
+            <p>rgb(red, green, blue) </p>
+        <p>with "red","green", and "blue" being any whole number between 0 and 255</p>
+            <p>ex: rgb(10, 260, 45)</p>
+    </div>
+
+
+
+
+
+    <!-- Footer -->
+    <div class="push"></div> <!-- used so footer doesn't overlap   "The above number is an environmentally  friendly zero-emission number"-->
+    <div id= "footer">
+        <div class="progress">
+            <div id="bar"  class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                54% Complete (hmmm... this <em>blue</em> bar seems to be stuck at 54)
+            </div>
+        </div>
+
+        <ul id="foot">
+            <li><a>Terms</a></li>
+            <li><a>Conditions</a></li>
+            <li><a href ="./Info.html">Information</a></li>
+            <li><a>Services</a></li>
+            <li><a>Privacy</a></li>
+            <li><a>Jobs</a></li>
+        </ul>
+
+    </div>
+    <!-- End Footer -->
+
+
+</body>
+</html>

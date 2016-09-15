@@ -1,0 +1,37 @@
+#clock{
+    height: 90px;
+    width: 90px;
+}
+#panel1{
+    width: 22em;
+    margin:2em auto;
+}
+
+#input1{
+    margin:0 auto 2em;
+    width: 30em;
+}
+
+#colorPicker{
+    margin: 3em auto;
+    width: 10em;
+
+}
+
+
+.left{
+    position:absolute;
+    left: 1em;
+    top: 5em;
+
+}
+#hint3{
+    position: absolute;
+    margin: 3em auto 10em;
+    width: 200px;
+    top: 5em;
+    right: 1em;
+
+}
+
+

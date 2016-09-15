@@ -1,0 +1,80 @@
+.left{
+    float: left;
+    position: absolute;
+    width: 15em;
+    top: 5em;
+    left: 0;
+    margin-bottom: 5em;
+}
+
+
+
+#key{
+    height: 10em;
+    width: 10em;
+    position: fixed;
+    right: 2em;
+    bottom: 7em;
+}
+
+#here{
+    color: teal;
+}
+
+#panel1{
+    margin: 3em auto;
+    width: 5em;
+}
+#panel2, #panel3{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+}
+
+.inline{
+    display: inline;
+    width: 7em;
+}
+
+#switch {
+    color: darkslategray;
+    font-size: large;
+}
+
+#hint6{
+    color: darkslategray;
+    margin-left: .5em;
+}
+
+
+#sortable {
+    list-style-type: none;
+    margin: auto auto 5em;
+    width: 20em;
+    text-align: center;
+
+}
+#sortable li {
+    margin: 0 3px;
+    padding: 0.4em;
+    padding-left: 1.5em; font-size: .9em; height: 20px;
+}
+
+#dialog{
+    background-color: #aaaaaa;
+}
+
+#accordion{
+    float: right;
+    position: absolute;
+    width: 15em;
+    top: 5em;
+    right: 0;
+    margin-bottom: 5em;
+}
+
+#accordion h3{
+    height: 1.5em;
+    font-size: .6em;
+
+}
